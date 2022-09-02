@@ -7,4 +7,4 @@ from users.models import CustomUser
 
 
 def home_page(req):
-    pass
+    return render(req, 'home_page.html')

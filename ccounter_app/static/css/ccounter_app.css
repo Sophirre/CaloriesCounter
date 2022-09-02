@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Josefin+Sans:wght@200;500&display=swap');
+ /* font-family: 'Aboreto', cursive;
+	font-family: 'Josefin Sans', sans-serif; */
+
+* {
+  box-sizing: border-box;
+}
+
+body{
+	background-color: #d6f6dd;
+  margin: 0;
+  padding: 35px 35px 0 35px;
+}
+
+
+.row>*{
+  padding-left: 0;
+}
+
+.block{
+  margin-top: 11px;
+  padding: 11px;
+  border-radius: 20px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.25); 
+}
+
+.block__container{
+  padding: 33px 0 0 36px;
+}
+
+#total>.block__container{
+  padding-left: 0;
+
+}
+
+.block h1{
+  font-family: 'Aboreto', cursive;
+  font-size: calc(18px + (40 - 18) * ((100vw - 300px) / (1920 - 300)));
+}
+
+
+
+#meal {
+
+  height: 57.4vh;
+
+}
+
+#dailyNorm{
+
+  height: 57.4vh;
+
+}
+
+#total{
+
+  height: 57.4vh;
+  text-align: center;
+}
+
+
+#infoSearch{
+  height: 35.18vh;
+
+}
+
+.progress__bars {
+  margin-top: 125px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.progress__bar {
+  background-color: rgb(0, 0, 0);
+  opacity: 0.35;
+  margin-bottom: 75px;
+  align-self: center;
+  width: 280px;
+  height: 8px;
+
+}
+
+.progress__bars > #carbohydrates{
+  background-color: rgb(244, 152, 156);
+}
+
+
+.progress__bars > #proteins{
+  background-color: rgb(180, 253, 206);
+}
+
+.progress__bars > #fats{
+  background-color: rgb(218, 196, 247);
+}
