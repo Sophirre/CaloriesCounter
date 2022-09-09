@@ -13,3 +13,6 @@ class CustomUser(AbstractUser):
     def get_daily_calories(self):
         return 66.47 + 13.75 * self.weight + 5 * self.height - 6.74 * self.age if self.sex == 'Male' \
                                                 else 655.1 + 9.6 * self.weight + 1.85 * self.height - 4.68 * self.age
+
+    def get_daily_water_norm(self):
+        return self.weight * 27.5

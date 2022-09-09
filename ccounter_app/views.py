@@ -7,4 +7,10 @@ from users.models import CustomUser
 
 
 def home_page(req):
-    return render(req, 'home_page.html')
+    name = CustomUser.first_name
+    usr_daily_calories = CustomUser.get_daily_calories()
+    usr_daily_water_norm = CustomUser.get_daily_water_norm()
+    return render(req, 'ccounter_app/home_page.html', {'name': name, 
+                                                       usr_daily_calories: usr_daily_calories,
+                                                       usr_daily_water_norm: usr_daily_water_norm
+                                                       })
